@@ -1,4 +1,4 @@
-
+// program that generate randome message from each array
 const inspMessages = [`Do not lose hope, nor be sad. `, 
                       `Never underestimate the power of Dua (supplication).`, 
                       `Allah makes the impossible possible.`,
@@ -18,15 +18,18 @@ const astMessages = [`Working together, tiny stars light the universe`,
                      `Don't ever stop reaching for the stars`,
                      `If i can then you surely can`]
 
-
+//function genrate random message
 const generateMessage = () => {
-    const randPhrase = (phrases) => {
-      return phrases[Math.floor(Math.random()*phrases.length)]
-    }
+
+   const randPhrase = (phrases) => {
+    //used math randome method to genrate index
+      return phrases[Math.floor(Math.random()* phrases.length)]
+   }
+   // return random Pharase from each arry
     return `${randPhrase(inspMessages)}, ${randPhrase(qoutesMessages)}, ${randPhrase(astMessages)}`;
   }
 
-
+//log the function
 console.log(generateMessage());
 
 
