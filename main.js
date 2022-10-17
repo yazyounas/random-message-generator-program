@@ -22,7 +22,7 @@ const astMessages = [`Working together, tiny stars light the universe`,
 const generateMessage = () => {
 
    const randPhrase = (phrases) => {
-    //used math randome method to genrate index
+    //used math random method to genrate index
       return phrases[Math.floor(Math.random()* phrases.length)]
    }
    // return random Pharase from each arry
