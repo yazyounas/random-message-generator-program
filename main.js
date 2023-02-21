@@ -30,7 +30,7 @@ const generateMessage = () => {
   }
 
 //log the function
-console.log(generateMessage());
+// console.log(generateMessage());
 
 
 
